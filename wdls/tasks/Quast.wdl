@@ -21,7 +21,7 @@ task Quast {
         File reads
         RuntimeAttr? runtime_attr_override
     }
-    Int disk_size = 365 + 2 * ceil(size(reads, "GB"))
+    Int disk_size = 365 + 3 * ceil(size(reads, "GB"))
 
     command <<<
         NPROC=$(awk '/^processor/{print}' /proc/cpuinfo | wc -l)
