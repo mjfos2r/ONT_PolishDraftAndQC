@@ -3,7 +3,7 @@ version: 1.2
 workflows:
   - name: ONT_PolishDraftAndQC
     subclass: wdl
-    primaryDescriptorPath: wdls/workflows/ONT_PolishDraftAndQC.wdl
+    primaryDescriptorPath: /wdls/workflows/ONT_PolishDraftAndQC.wdl
     latestTagAsDefault: 'true'
     authors:
       - orcid: "0000-0002-6006-0641"
